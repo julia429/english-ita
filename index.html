@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>English for IT</title>
 	<!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -24,49 +25,89 @@
 					    </button>
 					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 					      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					      	<li class="nav-item">
-					          <a class="nav-link" href="#">For what</a>
+					      	<li class="nav-item lang">
+					          <a class="nav-link" href="#forWhat" id="forwhatloc">For what</a>
+					        </li>
+					        <li class="nav-item lang">
+					          <a class="nav-link" href="#weOffer" id="weofferloc">We offer</a>
+					        </li>
+					        <li class="nav-item lang">
+					          <a class="nav-link" href="#ourTeachers" id="teachersloc">Our teachers</a>
+					        </li>
+					        <li class="nav-item lang">
+					          <a class="nav-link" href="#ourExp" id="exploc">Our experience </a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" href="#">We offer</a>
-					        </li>
-					        <li class="nav-item dropdown">
-					          <a class="nav-link" href="#">Our teachers</a>
+					          <a class="nav-link" href="#ourAdv" id="ourAdvloc">Our advantages</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" href="#">Our experience </a>
+					          <a class="nav-link" href="#ourAppr" id="ourApprloc">Approaches</a>
 					        </li>
 					        <li class="nav-item">
-					          <a class="nav-link" href="" target="_blank">Our advantages</a>
+					          <a class="nav-link" href="#contacts" id="contacts">Contacts</a>
 					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" href="" target="_blank">Approaches</a>
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" href="" target="_blank">Contacts</a>
-					        </li>
-					        <li class="nav-item">
-					          <a class="nav-link" href="" target="_blank">EN/ua</a>
+					        <li class="nav-item d-flex align-items-center">
+					          <a class="nav-link" href="#" id="e-lang-en">EN</a>/
+					          <a class="nav-link" href="#" id="e-lang-ua">UA</a>
 					        </li>
 					      </ul>
 					    </div>
 					  </div>
 					</nav>
-					<h1 class="main-title">English for it</h1>
-					<button class="start">start</button>
+					<h1 class="main-title" id="mainlitleloc">English for it</h1>
+					<!-- <button id="startloc">start</button> -->
+					<button type="button" class="start" data-bs-toggle="modal" data-bs-target="#exampleModal" id="startloc">
+						  start
+						</button>
+				</div>
+				<div class="row">
+					<div class="col-12 d-flex flex-column align-items-end" style="position: absolute; right: 0; bottom: 10.5%">
+						<!-- Default dropstart button -->
+						<div class="btn-group dropstart">
+						  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						    <img src="img/square.png">
+						  </button>
+						  	<div class="dropdown-menu sharing-bl">
+						  		<p>
+						  			<a href="">
+						  				<img src="img/sharing/3.png">
+						  			</a>
+						  			<a href="">
+						  				<img src="img/sharing/1.png">
+						  			</a>
+						  		</p>
+						  		<p>
+						  			<a href="">
+						  				<img src="img/sharing/5.png">
+						  			</a>
+						  			<a href="">
+						  				<img src="img/sharing/2.png">
+						  			</a>
+						  		</p>
+						  		<p>
+						  			<a href="">
+						  				<img src="img/sharing/6.png">
+						  			</a>
+						  			<a href="">
+						  				<img src="img/sharing/4.png">
+						  			</a>
+						  		</p>
+						  	</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		
 	</section>
-	<section class="under-main-header">
+	<section class="under-main-header" id="forWhat">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 descr">
-					<p class="for-what">
+					<p class="for-what" id="forwhatlocm">
 						For what 	
 					</p>
-					<p class="our-cource">
+					<p class="our-cource" id="forwhattxt">
 						Our English course is an opportunity for you to improve English skills, have a chance to speak fluent English and develop professionally. But not only the employee benefits from this but a company equally benefits from having an employee with additional language capabilities in the areas that you need. 
 					</p>
 				</div>
@@ -77,100 +118,123 @@
 
 	<section class="for-whom">
 		<div class="first-line">
-			<p class="for-pr1">or <br>ammers</p>
-			<p class="for-pr">For <br>Programmers</p>
-			<p class="support">Support etc</p>
-			<p class="web-designers">Web <br>Designers</p>
-			<p class="web-designers1">Web <br>Designers</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="d-flex justify-content-between">
+						<!-- <div class="col-2"> -->
+							<p class="web-designers1" id="forprogloc">Web <br>Designers</p>
+						<!-- </div> -->
+						<!-- <div class="col-2"> -->
+							<p class="for-pr" id="forprogrloc">For <br>Programmers</p>
+						<!-- </div> -->
+						<!-- <div class="col-2"> -->
+							<p class="support" id="supprtloc">Support etc</p>
+						<!-- </div> -->
+						<!-- <div class="col-2"> -->
+							<p class="web-designers" id="forprogloc1">Web <br>Designers</p>
+						<!-- </div> -->
+						<!-- <div class="col-2"> -->
+
+							<p class="for-pr1" id="forprogrloc1">For <br>Programmers</p>
+						<!-- </div> -->
+					</div>
+			</div>
+		</div>
 			
 		</div>
 		<div class="second-line">
-			<p class="qas">QA’s</p>
-			<p class="qas2">QA’s</p>
-			<p class="hrs">HR’s</p>
-			<p class="bas">BA’s</p>
-			<p class="pms">PM’s</p>
-			<p class="pms2">PM’s</p>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-between">
+						<p class="qas">QA’s</p>
+						<p class="qas2">QA’s</p>
+						<p class="hrs">HR’s</p>
+						<p class="bas">BA’s</p>
+						<p class="pms">PM’s</p>
+						<p class="pms2">PM’s</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="we-offer">
+	<section class="we-offer" id="weOffer">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 we-offer-wrapper">
-					<p>
-						<img src="img/weoffer.png" style="margin-right: 166px"> 	
+					<p class="for-what" id="weofflocm">
+						We offer 	
 					</p>
+					<!-- <p> -->
+						<!-- <span></span> -->
+						<!-- <img src="img/weoffer.png" style="margin-right: 166px">  -->	
+					<!-- </p> -->
 					<!-- <p class="we-offer-big-txt"> -->
 						<ul class="we-offer-big-txt">
-							<li>learning English for corporate team building</li>
-							<li>take a one-year English language course</li>
-							<li>take an intensive Deep Dive into English course</li>
-							<li>online course</li>
-							<li>the possibility of self-education together with us.</li>
+							<li id="weoff1">learning English for corporate team building</li>
+							<li id="weoff2">take a one-year English language course</li>
+							<li id="weoff3">take an intensive Deep Dive into English course</li>
+							<li id="weoff4">online course</li>
+							<li id="weoff5">the possibility of self-education together with us.</li>
 						</ul>
 					<!-- </p> -->
-					<img src="img/beauty.png">
+					<img src="img/beauty.png" class="weofferimg">
 				</div>
 			</div>
 		</div>
 		
 	</section>
 
-	<section class="our-teachers">
+	<section class="our-teachers" id="ourTeachers">
 		<div class="container d-flex align-items-center" style="height: 100%">
 			<div class="row custom-row">
 				<div class="left">
-					<img src="img/teachers.png">
+					<img src="img/teachers.png" class="teachersimg">
 				</div>
 				<div class="right">
-					<h1 class="our-teachers-header">our teachers</h1>
-					<p class="our-teachers-txt">The teaching process involves 2-3 English specialists with different expertise who apply various approaches and methods to teaching grammar and vocabulary. And two foreigners (native speakers) for practicing speaking.</p>
+					<h1 class="our-teachers-header" id="ourTeachersloc">our teachers</h1>
+					<p class="our-teachers-txt" id="ourTeacherstxt">The teaching process involves 2-3 English specialists with different expertise who apply various approaches and methods to teaching grammar and vocabulary. And two foreigners (native speakers) for practicing speaking.</p>
 				</div>
 			</div>
 		</div>
 		
 	</section>
 
-	<section class="our-expirience">
+	<section class="our-expirience" id="ourExp">
 		<div class="container d-flex align-items-center" style="height: 100%">
 			<div class="row custom-row">
 				<div class="left">
-					<h1 class="our-teachers-header">Our experience </h1>
-					<p class="our-teachers-txt">We have been teaching English for IT specialists for more than 10 years and successfully worked with dozens  IT firms which resulted in a well-established concept and the insight to what is required from us and how to meet the demands of your company staff.</p>
+					<h1 class="our-teachers-header" id="ourExploc">Our experience </h1>
+					<p class="our-teachers-txt" id="ourExptxt">We have been teaching English for IT specialists for more than 10 years and successfully worked with dozens  IT firms which resulted in a well-established concept and the insight to what is required from us and how to meet the demands of your company staff.</p>
 					
 				</div>
 				<div class="right">
-					<img src="img/bg3.png">
+					<img src="img/bg3.png" class="expimg">
 				</div>
 			</div>
 		</div>
 		
 	</section>
 
-	<section class="our-adv" style="height: 599px">
+	<section class="our-adv" id="ourAdv">
 		<div class="lines"></div>
-		<!-- <img src="img/lines.png"> -->
 		<div class="container d-flex align-items-center" style="height: 100%">
 			<div class="row custom-row">
 				<img src="img/lines.png" class="lines-img">
-				<!-- <div class="lines"></div> -->
-				
-				<img src="img/adv.png" style="height: auto; width: fit-content;"> 	
-				
-				
-				<div class="leftt">
-					<ul class="we-offer-big-txt" style="padding-left: 5rem">
-						<li>We have been teaching English for IT for 10 years, so we know what topics are of interest and use for IT employees.</li>
-						<li>We have practiced teaching English for different companies, so we have an experience in preparing custom (tailor made) programs and flexible to change it on demand.</li>
-						<li>Own CRM system which helps check homework and monitor progress.</li>
+
+				<div class="col-12 d-flex align-items-center cust-mobile">
+					<p class="for-what" id="ouradvloc">
+						Our advantages	
+					</p>
+					<ul class="we-offer-big-txt">
+						<li id="adv1">We have been teaching English for IT for 10 years, so we know what topics are of interest and use for IT employees.</li>
+						<li id="adv2">We have practiced teaching English for different companies, so we have an experience in preparing custom (tailor made) programs and flexible to change it on demand.</li>
+						<li id="adv3">Own CRM system which helps check homework and monitor progress.</li>
 					</ul>
-				</div>
-				<div class="rightt">
-					<ul class="we-offer-big-txt" style="padding-left: 5rem">
-						<li>You will definitely have a lesson on the day it is scheduled ( there is no need to put off the class even if one teacher is ill or can`t conduct it)</li>
-						<li>Different teachers, different approaches, who/which will make the process more interesting. </li>
-						<li>Various areas of teacher expertise; there are teachers who can conduct excellent classes to students of upper-intermediate level and higher and those who are able to productively work with beginners.</li>
+					<ul class="we-offer-big-txt">
+						<li id="adv4">You will definitely have a lesson on the day it is scheduled ( there is no need to put off the class even if one teacher is ill or can`t conduct it)</li>
+						<li id="adv5">Different teachers, different approaches, who/which will make the process more interesting. </li>
+						<li id="adv6">Various areas of teacher expertise; there are teachers who can conduct excellent classes to students of upper-intermediate level and higher and those who are able to productively work with beginners.</li>
 					</ul>
 				</div>
 			</div>
@@ -178,88 +242,197 @@
 		
 	</section>
 
-	<section class="approaches">
+	<section class="approaches" id="ourAppr">
 		<div class="container">
-			<div class="row justify-content-between" style="margin-bottom: 130px;">
-				<h1 class="approaches-header">our 6 main approaches to teaching English</h1>
-				<div class="col-6 d-flex cust-w">
+			<div class="row justify-content-between mb-6">
+				<h1 class="approaches-header" id="mainappr">our 6 main approaches to teaching English</h1>
+				<div class="col-6 d-flex cust-w mbc">
 					<img src="img/001.png" class="number">
-					<div class="desrcription">
-						<h3>Learning English  for Corporate  Team  Building</h3>
-						<p class="under">As one of the approaches for improving your staff cohesiveness we suggest English classes for your employees Team Building. </p>
-						<p class="under-main-txt">We are sure all your workers are well selected and they do have sufficient knowledge of English. Thus, there is no need to teach them academic or general language skills.  However, English activities could be useful for enhancing social relations  ...</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
+					<div class="post">
+						<h3 id="header1">Learning English  for Corporate  Team  Building</h3>
+						<p class="under" id="subheader1">As one of the approaches for improving your staff cohesiveness we suggest English classes for your employees Team Building. </p>
+						<p class="content">
+						</p>
+						<!-- <button onclick="readMore(this)" class="more-btn">more</button> -->
+						<!-- <button class="register">register</button> -->
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal" id="registerloc">
+						  register
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog">
+
+						    <div class="modal-content">
+						    	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+						      </div>
+						      <div class="modal-body">
+						      	<form>
+						        <div class="mb-3">
+								  <label for="exampleFormControlInput1" class="form-label" id="nameloc">Name</label>
+								  <input type="text" class="form-control" id="exampleFormControlInput1" required>
+								</div>
+								<div class="mb-3">
+								  <label for="exampleFormControlInput2" class="form-label" id="phoneloc">Phone</label><sup>*</sup>
+								  <input type="text" class="form-control" id="exampleFormControlInput2" required>
+								</div>
+								<div class="mb-3">
+								  <label for="exampleFormControlInput3" class="form-label" id="emailloc">Email</label><sup>*</sup>
+								  <input type="email" class="form-control" id="exampleFormControlInput3" required>
+								</div>
+								<div class="mb-3 d-flex justify-content-between">
+									<div class="radio-txt" id="formloc">Form of education</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheckout">
+									  <label class="form-check-label" for="defaultCheckoff" id="onlineloc">
+									    online
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="offlineloc">
+									    offline
+									  </label>
+									</div>
+								</div>
+								<div class="mb-3 d-flex">
+									<img src="img/appr.png" style="height: 299px; margin-top: 20px; display: inline-block;" class="appr-modal">
+									<div class="checkbox-wrapper">
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr1">
+									    Learning English  for Corporate  Team  Building
+									  </label>
+									</div>
+									
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr2">
+									    English language courses  for IT companies
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr3">
+									    Intense course Deep Dive into English
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr4">
+									    English online
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr5">
+									    Books for self education
+									  </label>
+									</div>
+									<div class="form-check">
+									  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+									  <label class="form-check-label" for="defaultCheck1" id="appr6">
+									    Testing English Level and Certification 
+									  </label>
+									</div>
+									</div>
+								</div>
+								<div class="mb-3">
+								  <label for="area" class="form-label" id="howloc">How did you hear about us?</label>
+								  <textarea class="form-control" id="area" rows="5"></textarea>
+								</div>
+								<div class="mb-3 d-flex justify-content-center">
+									<button type="submit" class="btn btn-primary register-btn" id="forregloc">Register</button>
+								</div>
+							</form>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
 					</div>
 
 				</div>
 				<div class="col-6">
-					<img src="img/books.png">
+					<img src="img/books.png" class="books-mobile">
 				</div>
 			</div>
-			<div class="row justify-content-between" style="margin-bottom: 130px;">
-				<div class="col-6 d-flex cust-w">
+			<div class="row justify-content-between mb-6">
+				<div class="col-6 d-flex cust-w mbc">
 					<img src="img/002.png" class="number">
-					<div class="desrcription">
-						<h3>English language courses  for IT companies</h3>
-						<p class="under">As one of the approaches for improving your staff cohesiveness we suggest English classes for your employees Team Building.The  English course is  made for the employees of pre-intermediate level.  They are supposed to increase their knowledge to  upper-intermediate level during a year.   </p>
-						<p class="under-main-txt">  Every IT employee should possess English knowledge. The  ...</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
+					<div class="desrcription post">
+						<h3 id="header2">English language courses  for IT companies</h3>
+						<p class="under" id="subheader2">As one of the approaches for improving your staff cohesiveness we suggest English classes for your employees Team Building.The  English course is  made for the employees of pre-intermediate level.  They are supposed to increase their knowledge to  upper-intermediate level during a year.   </p>
+						<p class="content">Every IT employee should possess English knowledge. The majority of them do have some English language skills. Our English courses can help your company staff maintain and improve the language knowledge they have. Moreover, we offer some professional topics to increase their vocabulary.There are two lessons a week, each lesson lasts 60-90 minutes and the course lasts 12 months, giving a total of 96-144  hours. There is one main lesson which contains grammatical and lexical material and the second one is for its practical implementation.Vocabulary is learnt at the classes and reinforced during a short everyday homework. We pay attention to all kinds of English language activities to improve  listening and speaking skills at the classes  but writing and reading  skills are developed during the homework.The  learning process includes  a lot of practical exercises like making presentations,  for example.At a practical class participants make dialogues, role play situations and take part in discussions, as the  main objective of the course is to improve communication skills by giving confidence, and practicing fluency.The first part of the course includes general English topics. It is divided into units. Every unit consists of 4 lessons and a test to evaluate progress and motivate to learn more. The second part contains  professional English topics to enrich professional vocabulary.
+							 </p>
+						<button onclick="readMore(this)" class="more-btn">more</button>
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  register
+						</button>
 					</div>
 
 				</div>
-				<div class="col-6 d-flex cust-w">
+				<div class="col-6 d-flex cust-w mbc">
 					<img src="img/003.png" class="number">
-					<div class="desrcription">
+					<div class="desrcription post">
 						<h3>Intense course Deep Dive into English</h3>
 						<p class="under">Deep Dive into English is a unique intense course for people, who are willing to dedicate their efforts to master their English and observe impressive results in a short period of time.</p>
-						<p class="under-main-txt">Nowadays a successful business is impossible without international cooperation. Foreign customers, world-wide online and offline studying programmes, hackathons, business meetings. It means that knowing English is compulsory for every  ...</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
+						<p class="content 3">
+						</p>
+						<button onclick="readMore(this)" class="more-btn">more</button>
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  register
+						</button>
 					</div>
 				</div>
 			</div>
 
 
-			<div class="row justify-content-between" style="margin-bottom: 130px;">
-				<div class="col-6 d-flex cust-w">
-					<img src="img/foot.png">
+			<div class="row justify-content-between mb-6">
+				<div class="col-6 cust-w">
+					<img src="img/foot.png" class="foot-mob">
 					
 				</div>
-				<div class="col-6 d-flex cust-w">
+				<div class="col-6 d-flex cust-w mbc">
 					<img src="img/004.png" class="number">
-					<div class="desrcription">
-						<h3>English online</h3>
-						<p class="under">Understanding the current needs of IT companies to arrange employee education and team building activities online, we are offering an approach to learn English by means of our online platform.</p>
-						<p class="under-main-txt">The opportunity includes 3 programs for practicing grammar and vocabulary skills for Beginners, Intermediate and Upper Intermediate level employees.
-						Our online courses consist of exceptionally IT topics such as Meetings, Release, IT events,  IT  ...</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
-					</div>
+					<div class="desrcription post">
+						<h3 id="header4">English online</h3>
+						<p class="under" id="subheader4">Understanding the current needs of IT companies to arrange employee education and team building activities online, we are offering an approach to learn English by means of our online platform.</p>
+						<p class="content">The opportunity includes 3 programs for practicing grammar and vocabulary skills for Beginners, Intermediate and Upper Intermediate level employees.
+
+ 						Our online courses consist of exceptionally IT topics such as Meetings, Release, IT events, IT teams. Within our online English courses, we provide your employees access to our interactive online lessons supervised by our English teachers. At the completion of the course employees are supposed to do English Level Test and receive a certificate.</p>
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  register
+						</button>
+					</div>					
 				</div>
 			</div>
 
-			<div class="row justify-content-between" style="margin-bottom: 130px;">
-				<div class="col-6 d-flex cust-w">
+			<div class="row justify-content-between mb-6">
+				<div class="col-12 col-md-6 d-flex cust-w mbc">
 					<img src="img/005.png" class="number">
-					<div class="desrcription">
-						<h3>Books for self education</h3>
-						<p class="under">In addition, we have a library of our own books for learning professional English. They  are dedicated to the most popular IT specializations such as Web Design, Project Management, QA, and Programmers.</p>
-						<p class="under-main-txt">  Our English textbooks are convenient for both lessons with a corporate English teacher and self education of your employees within their area of expertise.</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
+					<div class="desrcription justify-content-between">
+						<h3 id="header5">Books for self education</h3>
+						<p class="under" id="subheader5">In addition, we have a library of our own books for learning professional English. They  are dedicated to the most popular IT specializations such as Web Design, Project Management, QA, and Programmers.</p>
+						<p class="under-main-txt" id="5">  Our English textbooks are convenient for both lessons with a corporate English teacher and self education of your employees within their area of expertise.</p>
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  register
+						</button>
 					</div>
 
 				</div>
-				<div class="col-6 d-flex cust-w">
+				<div class="col-12 col-md-6 d-flex cust-w mbc">
 					<img src="img/006.png" class="number">
-					<div class="desrcription">
-						<h3>Testing English Level and Certification </h3>
-						<p class="under">All our courses involve English testing and certification. We also provide testing and certification as a separate service.</p>
-						<p class="under-main-txt">If you need to know your level or require a document that proves your proficiency in English for company assessment, relocation, study, CV, etc. we can help you in this regard.</p>
-						<p><a href="" class="more">more -> </a></p>
-						<button class="register">register</button>
+					<div class="desrcription justify-content-between">
+						<h3 id="header6">Testing English Level and Certification </h3>
+						<p class="under" id="subheader6">All our courses involve English testing and certification. We also provide testing and certification as a separate service.</p>
+						<p class="under-main-txt" id="6">If you need to know your level or require a document that proves your proficiency in English for company assessment, relocation, study, CV, etc. we can help you in this regard.</p>
+						<button type="button" class="btn btn-primary register" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						  register
+						</button>
 					</div>
 				</div>
 			</div>
@@ -270,7 +443,7 @@
 		<div class="container" style="height: 100%;">
 			<div class="row" style="height: 100%;">
 				<div class="col-12 d-flex" style="height: 100%;">
-					<div class="d-flex" style="flex-direction: column; justify-content: space-between;">
+					<div class="d-flex none-mob" style="flex-direction: column; justify-content: space-between;">
 						<img src="img/reviews.png">
 						<img src="img/reviews.png">
 
@@ -280,56 +453,64 @@
 				    <div class="swiper mySwiper" style="margin-left: 36px;">
 				      <div class="swiper-wrapper">
 				        <div class="swiper-slide">
-				        	<div class="user-info">
-				        		<img src="img/img1.png">
 				        		<div class="user-info-details">
-				        			<p class="user-name">First Name Last Name</p>
-				        			<p class="job">Direction:</p>
-				        			<p class="job-details">Learning english  for corporateteam  building</p>
+				        			<p class="user-name">Taras Bezdushnyi</p>
+				        			<p class="job-details">Deep Dive into English (офлайн)</p>
+				        			<p class="job-details">
+				        				<b><a href="https://intita.com/certificate/258/355" target="_blank">Certificate</a></b>
+				        			</p>
 				        			<p class="issue">
-				        				<span class="iss">Issue: </span>
 				        				<span class="year">2021 year</span>
 				        			</p>
-				        			<p class="progress-numbers">4/5</p>
-			        				<div class="progress" style="width: 108px; height: 6px">
-									  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
 				        		</div>
 				        		
-				        	</div>
-				        	<div class="user-txt">
-				        		<p>Lorem ipsum dolor sit amet, scripserit accommodare eam ei. Ne per ceteros adversarium, et qui sale populo qualisque. Qui natum eirmod eu. Ut malorum discere has. Eum lorem maiorum signiferumque ea. Cum ex veri sonet doctus. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet
-
-				        			<span id="dots">...</span><span id="more">Cum ex veri sonet doctus. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Cum ex veri sonet doctus.
+				        	<!-- </div> -->
+				        	<div class="user-txt post">
+				        		<p class="content">Курс мені порекомендували, що ж, тепер і я його комусь порекомендую:)
+								Це був багатогранний і цікавий досвід для старту говоріння, що дало мені поштовх і впевненість - що ок, виявляється я можу норм говорити і мене зрозуміють. Саме те, що багато говорили, розповідали, і обговорювали  свої думки, свої точки зору на певні теми чи проблеми мені дуже зайшло, тобто не зациклювались на вивченні слів.
+								Хоча й слова були, але “потрібні” слова, вірніше корисні фрази, зокрема для ІТ.		
 				        		</p>
-				        		<button onclick="myFunction()" id="myBtn">more</button>
+				        		<button onclick="readMore(this)" class="more-btn">more</button>
 				        	</div>
 				        </div>
 				        <div class="swiper-slide">
 				        	<div class="user-info">
-				        		<img src="img/img1.png">
 				        		<div class="user-info-details">
-				        			<p class="user-name">First Name Last Name</p>
-				        			<p class="job">Direction:</p>
-				        			<p class="job-details">Learning english  for corporateteam  building</p>
+				        			<p class="user-name">Oleksandr Kalaida</p>
+				        			<p class="job-details">Deep Dive into English (офлайн)</p>
+				        			<p class="job-details">
+				        				<b><a href="https://intita.com/certificate/259/355" target="_blank">Certificate</a></b>
+				        			</p>
+
 				        			<p class="issue">
-				        				<span class="iss">Issue: </span>
 				        				<span class="year">2021 year</span>
 				        			</p>
-				        			<p class="progress-numbers">4/5</p>
-			        				<div class="progress" style="width: 108px; height: 6px">
-									  <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
 				        		</div>
 				        		
 				        	</div>
-				        	<div class="user-txt">
-				        		<p>Lorem ipsum dolor sit amet, scripserit accommodare eam ei. Ne per ceteros adversarium, et qui sale populo qualisque. Qui natum eirmod eu. Ut malorum discere has. Eum lorem maiorum signiferumque ea. Cum ex veri sonet doctus. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet </p>
+				        	<div class="user-txt post">
+				        		<p class="content">Це був реально крутий досвід. Ніколи не міг подумати що вивчення англійської може бути настільки цікавим та захоплюючим. Особлива подяка кожному викладачу. Дуже крутий підхід до вивчення іноземної мови. Буду рекомендувати DDE своїм друзям та знайомим. </p>
+				        		<button onclick="readMore(this)" class="more-btn">more</button>
+				        	</div>
+				        </div>
+
+				        <div class="swiper-slide">
+				        	<div class="user-info">
+				        		<div class="user-info-details">
+				        			<p class="user-name">Natalia Lapshova</p>
+				        			<p class="job-details">Deep Dive into English (офлайн)</p>
+				        		</div>
+				        		
+				        	</div>
+				        	<div class="user-txt post">
+				        		<p class="content">Дякую за курс усім організаторам та викладачам! Це був цікавий досвід. Нестандартні підходи, творчі завдання, надихаюча атмосфера - все, аби не фіксуватись на помилках, а досягати рівня fluently.Thanks a lot for your work. It was a professional, informative and perfect period!</p>
+				        		<button onclick="readMore(this)" class="more-btn">more</button>
 				        	</div>
 				        </div>
 				      </div>
 				      <div class="swiper-button-next"></div>
 				      <div class="swiper-button-prev"></div>
+				      <div class="swiper-pagination progress-numbers"></div>
 				    </div>
 				</div>
 			</div>
@@ -340,54 +521,53 @@
 
 
 	<section class="choose">
-		<div class="d-flex align-items-center">
-			<span class="choose-txt">choose 
-			your 
+		<div class="d-flex align-items-center justify-content-around">
+			<span class="choose-txt" id="chooseloc">choose 
+			your <br>
 			world</span>
-			<img src="img/phone.png">
+			<img src="img/phone.png" class="device-mob">
 		</div>
 	</section>
 
-
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row">
-				<div class="col-3 d-flex align-items-center justify-content-center">
-					<img src="img/footerr.png">
+				<div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
+					<img src="img/plants.png">
 					<!-- image will be here -->
 				</div>
-				<div class="col-3">
+				<div class="col-12 col-md-3 d-flex align-items-center">
 					<ul type="none" class="footer-menu">
-						<li>for what</li>
-						<li>we offer</li>
-						<li>our teachers</li>
-						<li>our expirience</li>
-						<li>our advantages</li>
-						<li>approaches</li>
-						<li>contacts</li>
+						<li><a href="#forWhat" id="forwhatlocf">for what</a></li>
+						<li><a href="#weOffer" id="weofferlocc">we offer</a></li>
+						<li><a href="#ourTeachers" id="teacherslocc">our teachers</a></li>
+						<li><a href="#ourExp" id="explocf">our expirience</a></li>
+						<li><a href="#ourAdv" id="ourAdvlocf">our advantages</a></li>
+						<li><a href="#ourAppr" id="ourApprlocc">approaches</a></li>
+						<li><a href="#" id="contactsf">contacts</a></li>
 						
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-12 col-md-3 d-flex align-items-center">
 					<ul type="none" class="footer-contacts">
 						<li class="mb-2">
-							<a href="">
+							<a href="" target="_blank">
 								<img src="img/tg.png">
 								
 							</a>
-							<a href="">
+							<a href="https://www.facebook.com/vinnytsia.itacademy/?timeline_context_item_type=intro_card_work&timeline_context_item_source=100002020634230&pnref=lhc" target="_blank">
 								<img src="img/fb.png" hspace="24">
 							</a>
-							<a href="">
+							<a href="https://www.instagram.com/ita.in.ua/?utm_medium=copy_link" target="_blank">
 								<img src="img/insta.png">
 							</a>
-							<a href="">
+							<a href="https://www.youtube.com/channel/UC2EMqcr4pEBuTGEJBaFgOzw" target="_blank">
 								<img src="img/yotube.png" hspace="24">
 								
 							</a>
 						</li>
 						<li style="margin-top: 52px; margin-bottom: 36px;">
-							<span class="cont">Contact us:</span>
+							<span class="cont" id="contactusloc">Contact us:</span>
 							<span class="phone-numb">067 431 19 21</span>
 						</li>
 						<li>
@@ -396,7 +576,7 @@
 						
 					</ul>
 				</div>
-				<div class="col-3 d-flex align-items-center justify-content-center">
+				<div class="col-12 col-md-3 d-flex align-items-center justify-content-center">
 					<a href="#mainHeader">
 					<img src="img/arrow.png">
 				</a>
@@ -404,8 +584,72 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="footer-mobile">
+		<div class="bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-3"></div>
+				<div class="col-6 mt-5 d-flex flex-column justify-content-center">
+					<ul type="none" class="footer-menu-mobile">
+						<li><a href="#forWhat" id="forwhatlocf">for what</a></li>
+						<li><a href="#weOffer" id="weofferlocc">we offer</a></li>
+						<li><a href="#ourTeachers" id="teacherslocc">our teachers</a></li>
+						<li><a href="#ourExp" id="explocf">our expirience</a></li>
+						<li><a href="#ourAdv" id="ourAdvlocf">our advantages</a></li>
+						<li><a href="#ourAppr" id="ourApprlocc">approaches</a></li>
+						<li><a href="#" id="contactsf">contacts</a></li>
+						
+					</ul>
+					<ul type="none" class="footer-contacts">
+						<li class="mb-2">
+							<div class="d-flex justify-content-between mb-3">
+								<a href="">
+									<img src="img/tg.png">
+									
+								</a>
+								<a href="https://www.facebook.com/vinnytsia.itacademy" target="_blank">
+									<img src="img/fb.png" hspace="24">
+								</a>
+								<a href="https://www.instagram.com/ita.in.ua/?utm_medium=copy_link" target="_blank">
+									<img src="img/insta.png">
+								</a>
+							</div>
+						<div class="d-flex justify-content-between">
+							<a href="">
+								<img src="img/tg.png">
+								
+							</a>
+							<a href="https://www.facebook.com/vinnytsia.itacademy" target="_blank">
+								<img src="img/fb.png" hspace="24">
+							</a>
+							<a href="https://www.instagram.com/ita.in.ua/?utm_medium=copy_link" target="_blank">
+								<img src="img/insta.png">
+							</a>
+						</div>
+						</li>
+						<li style="margin-top: 52px; margin-bottom: 36px;">
+							<span class="cont" id="contactusloc">Contact us:</span>
+							<span class="phone-numb">067 431 19 21</span>
+						</li>
+						<li>
+							<span class="email"> ita.in.ua@gmail.com</span>
+						</li>
+						
+					</ul>
+			</div>
+	<div class="col-3 mt-5 d-flex justify-content-center">
+		<a href="#mainHeader">
+					<img src="img/arrow.png">
+				</a>
+	</div>
+	</div>
+</div>
+	</div>
+	</div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 
 <!-- Swiper JS -->
  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -416,24 +660,190 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
       });
     </script>
-    <script>
-    	function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "less";
-    moreText.style.display = "inline";
-  }
-}
+    <script>
+  var txt = {
+  en: {
+  	'forwhatloc': 'For what',
+  	// 'forwhatlocс': 'For what',
+  	'forwhatlocf': 'For what',
+  	'forwhattxt': 'Our English course is an opportunity for you to improve English skills, have a chance to speak fluent English and develop professionally. But not only the employee benefits from this but a company equally benefits from having an employee with additional language capabilities in the areas that you need.',
+  	'ourTeachersloc': 'Our teachers',
+  	'ourTeacherstxt': 'The teaching process involves 2-3 English specialists with different expertise who apply various approaches and methods to teaching grammar and vocabulary. And two foreigners (native speakers) for practicing speaking.',
+  	'ourExploc': 'Our experience',
+  	'ourExptxt': 'We have been teaching English for IT specialists for more than 10 years and successfully worked with dozens  IT firms which resulted in a well-established concept and the insight to what is required from us and how to meet the demands of your company staff.',
+  	'adv1': 'We have been teaching English for IT for 10 years, so we know what topics are of interest and use for IT employees.',
+  	'adv2': 'We have practiced teaching English for different companies, so we have an experience in preparing custom (tailor made) programs and flexible to change it on demand.',
+  	'adv3': 'Own CRM system which helps check homework and monitor progress.',
+  	'adv4': 'You will definitely have a lesson on the day it is scheduled ( there is no need to put off the class even if one teacher is ill or can`t conduct it)',
+  	'adv5': 'Different teachers, different approaches, who/which will make the process more interesting.',
+  	'adv6': 'Various areas of teacher expertise; there are teachers who can conduct excellent classes to students of upper-intermediate level and higher and those who are able to productively work with beginners',
+  	'mainappr': 'OUR 6 MAIN APPROACHES TO TEACHING ENGLISH',
+  	'header1': 'Learning English for Corporate Team Building',
+  	'header2': 'English language courses  for IT companies',
+  	'header4': 'English online',
+  	'header5': 'Books for self education',
+  	'header6': 'Testing English Level and Certification',
+  	'subheader1': 'As one of the approaches for improving your staff cohesiveness we suggest English classes for your employees Team Building. subheader1',
+  	'subheader2': 'The  English course is made for the employees of pre-intermediate level. They are supposed to increase their knowledge to upper-intermediate level during a year.',
+  	'subheader4': 'Understanding the current needs of IT companies to arrange employee education and team building activities online, we are offering an approach to learn English by means of our online platform.',
+  	'subheader5': 'In addition, we have a library of our own books for learning professional English. They  are dedicated to the most popular IT specializations such as Web Design, Project Management, QA, and Programmers.',
+  	'subheader6': 'All our courses involve English testing and certification. We also provide testing and certification as a separate service.',
+  	'weofferloc': 'We offer',
+  	'weofferlocc': 'We offer',
+  	'weofflocm': 'We offer',
+  	'teachersloc': 'Our teachers',
+  	'teacherslocc': 'Our teachers',
+  	'exploc': 'Our experience',
+  	'explocf': 'Our experience',
+  	'ourAdvloc': 'Our advantages',
+  	'ourAdvlocf': 'Our advantages',
+  	'ourApprloc': 'Approaches',
+  	'ourApprlocc': 'Approaches',
+  	'contacts': 'Contacts',
+  	'contactsf': 'Contacts',
+  	'chooseloc': 'Choose your world',
+  	'contactusloc': 'Contact us',
+  	'mainlitleloc': 'English for IT',
+  	'startloc': 'Start',
+  	'forwhatlocm': 'For what',
+  	'registerloc': 'Register',
+  	'exampleModalLabel': 'Registration',
+  	'nameloc': 'name',
+  	'phoneloc': 'phone',
+  	'emailloc': 'email',
+  	'formloc': 'form of education',
+  	'onlineloc': 'online',
+  	'offlineloc': 'offline',
+  	'appr1': 'Learning English  for Corporate  Team  Building',
+  	'appr2': 'English language courses for IT companies',
+  	'appr3': 'Intense course Deep Dive into English',
+  	'appr4': 'English online',
+  	'appr5': 'Books for self education',
+  	'appr6': 'Testing English Level and Certification',
+  	'howloc': 'How did you hear about us?',
+  	'forregloc': 'Register',
+  	'weoff1': 'learning English for corporate team building',
+  	'weoff2': 'take a one-year English language course',
+  	'weoff3': 'take an intensive Deep Dive into English course',
+  	'weoff4': 'online course',
+  	'weoff5': 'the possibility of self-education together with us.',
+  	'forprogloc': 'Web Designers',
+  	'forprogloc1': 'Web Designers',
+  	'forprogrloc': 'For programmers',
+  	'forprogrloc1': 'For programmers',
+  	'supprtloc': 'Support etc',
+  	'ouradvloc': 'Our advantages',
+  	'1': 'We are sure all your workers are well selected and they do have sufficient knowledge of English. Thus, there is no need to teach them academic or general language skills.  However, English activities could be useful for enhancing social relations, encouragement and consequently,  employees retention.In spite of the fact, that all people have different hobbies and interests, the process of learning  English is nearly the only one which is engaging for all  IT specialists. Thus English classes are not imposing as some mandatory corporate activities. Besides, English comprehensions and skills require constant practice as they are easily lost. Let us clarify how we see the activities.  Relying on our 10 years of experience, we can say that speaking activities are the most suitable for the purpose. We have a  menu of different role-plays, English speaking club ideas, topics for debates, “battles” of opinions and teamwork activities (as you see this is not an academic approach to teaching).We encourage you to provide your employees with one more fringe benefit,  to inspire them to work more efficiently in teams and be more dedicated to Your company goals!',
+  	'2': 'Every IT employee should possess English knowledge. The majority of them do have some English language skills. Our English courses can help your company staff maintain and improve the language knowledge they have. Moreover, we offer some professional topics to increase their vocabulary.There are two lessons a week, each lesson lasts 60-90 minutes and the course lasts 12 months, giving a total of 96-144  hours. There is one main lesson which contains grammatical and lexical material and the second one is for its practical implementation.Vocabulary is learnt at the classes and reinforced during a short everyday homework. We pay attention to all kinds of English language activities to improve  listening and speaking skills at the classes  but writing and reading  skills are developed during the homework.The  learning process includes  a lot of practical exercises like making presentations,  for example.At a practical class participants make dialogues, role play situations and take part in discussions, as the  main objective of the course is to improve communication skills by giving confidence, and practicing fluency.The first part of the course includes general English topics. It is divided into units. Every unit consists of 4 lessons and a test to evaluate progress and motivate to learn more. The second part contains  professional English topics to enrich professional vocabulary.',
+  	'3': 'Nowadays a successful business is impossible without international cooperation. Foreign customers, world-wide online and offline studying programmes, hackathons, business meetings. It means that knowing English is compulsory for every member of a team.Having accomplished this program, the participants will increase their English at least to the next level. We suggest conducting high-quality lessons which cover all the aspects of the language - speaking, writing, listening, grammar and pronunciation. The topics are connected with IT, relocation, work with customers, business, tourism and international issues.The course takes 3-6 months. The schedule is flexible and you may choose an appropriate variant for the team- 4-5 days per week and 1,5-3 hours a day.A system of a constant hometask checking and regular progress reviews provides a fast development of the students. As a result of the course we guarantee that the participants will be prepared for Skype and facetime meetings with foreign customers, business emailing, writing documentation in English and business trips or relocation abroad. At the end of the course the students can leave abroad for a 2 week studying course with accommodation provided. The price will be discussed.A success of the first intense course Deep Dive into English experience is proven by the graduates’ impressive results - 90% of participants increased their English and implemented it in personal and professional life - promotion, tourism, getting a dream job.',
+  	'4': 'The opportunity includes 3 programs for practicing grammar and vocabulary skills for Beginners, Intermediate and Upper Intermediate level employees.Our online courses consist of exceptionally IT topics such as Meetings, Release, IT events, IT teams. Within our online English courses, we provide your employees access to our interactive online lessons supervised by our English teachers. At the completion of the course employees are supposed to do English Level Test and receive a certificate.',
+  	'5': 'Our English textbooks are convenient for both lessons with a corporate English teacher and self education of your employees within their area of expertise.',
+  	'6': ' If you need to know your level or require a document that proves your proficiency in English for company assessment, relocation, study, CV, etc. we can help you in this regard.'
+
+	  },
+	  ua: {
+	  	'forwhatloc': 'Для чого',
+	  	'forwhatlocf': 'Для чого',
+	  	'forwhattxt': 'Наш курс англійської мови – це можливість для вас покращити знання англійської мови, отримати можливість вільно розмовляти англійською мовою та професійно розвиватися. Але від цього виграє не тільки працівник, але й компанія виграє від наявності працівника з додатковими мовними здібностями в тих сферах, які вам потрібні.',
+	  	'ourTeachersloc': 'Наші викладачі',
+	  	'ourTeacherstxt': 'У навчальному процесі задіяно 2-3 спеціаліста з англійської мови з різними знаннями, які застосовують різноманітні підходи та методи викладання граматики та лексики. І два іноземці (носії мови) для практики мовлення.',
+	  	'ourExploc': 'Наш досвід',
+	  	'ourExptxt': 'Ми викладаємо англійську мову для ІТ-спеціалістів більше 10 років і успішно працювали з десятками ІТ-компаній, що призвело до добре розробленої концепції та розуміння того, що від нас вимагається і як задовольнити вимоги персоналу вашої компанії.',
+	  	'adv1': 'Ми викладаємо англійську для ІТ вже 10 років, тому знаємо, які теми цікаві та корисні для ІТ-співробітників.',
+	  	'adv2': 'Ми практикуємо викладання англійської мови для різних компаній, тож маємо досвід у підготовці індивідуальних (індивідуалізованих) програм і гнучко змінювати їх на вимогу.',
+	  	'adv3': 'Власна система CRM, яка допомагає перевіряти домашнє завдання та контролювати прогрес.',
+	  	'adv4': 'У вас обовязково буде урок в призначений день (не потрібно відкладати урок, навіть якщо один викладач захворів або не може його провести)',
+	  	'adv5': 'Різні викладачі, різні підходи, хто/який зробить процес цікавішим.',
+	  	'adv6': 'Різноманітні сфери знань викладача; є викладачі, які можуть чудово провести заняття зі студентами рівня upper-intermediate і вище, і ті, хто вміє продуктивно працювати з початківцями.',
+	  	'mainappr': 'наші 6 основних підходів до викладання англійської мови',
+	  	'header1': 'Вивчення англійської мови для побудови корпоративної команди',
+	  	'header2': 'Курси англійської мови для IT компаній',
+	  	'header4': 'Англійська онлайн',
+	  	'header5': 'Книги для самоосвіти',
+	  	'header6': 'Тестування рівня англійської мови та сертифікація',
+	  	'subheader1': 'Як один із підходів для покращення згуртованості вашого персоналу ми пропонуємо курси англійської мови для ваших співробітників формування команди. дводалопадвлопадлвпадлвпвд',
+	  	'subheader2': 'Курс англійської розроблений для працівників рівня pre-intermediate. Протягом року вони повинні підвищити свої знання до рівня upper-intermediate.',
+	  	'subheader4': 'Розуміючи поточні потреби ІТ-компаній в організації онлайн-навчання співробітників і командоутворення, ми пропонуємо підхід до вивчення англійської мови за допомогою нашої онлайн-платформи.',
+	  	'subheader5': 'Крім того, у нас є бібліотека власних книг для вивчення професійної англійської мови. Вони присвячені найпопулярнішим ІТ-спеціалізаціям, таким як веб-дизайн, управління проектами, контроль якості та програмісти.',
+	  	'subheader6': 'Усі наші курси включають тестування та сертифікацію з англійської мови. Ми також надаємо тестування та сертифікацію як окрему послугу.',
+	  	'weofferloc': 'Ми пропонуємо',
+	  	'weofferlocc': 'Ми пропонуємо',
+	  	'weofflocm': 'Ми пропонуємо',
+	  	'teachersloc': 'Наші викладачі',
+	  	'teacherslocc': 'Наші викладачі',
+	  	'exploc': 'Наш досвід',
+	  	'explocf': 'Наш досвід',
+	  	'ourAdvloc': 'Наші переваги',
+	  	'ourAdvlocf': 'Наші переваги',
+	  	'ourApprloc': 'Підходи',
+	  	'ourApprlocc': 'Підходи',
+	  	'contacts': 'Контакти',
+	  	'contactsf': 'Контакти',
+	  	'chooseloc': 'Обирай свій світ',
+	  	'contactusloc': "Зв'язатись з нами",
+	  	'mainlitleloc': 'Англійська для ІТ',
+	  	'startloc': 'Початок',
+	  	'forwhatlocm': 'Для чого',
+	  	'registerloc': 'Зареєструватись',
+	  	'exampleModalLabel': 'Реєстрація',
+	  	'nameloc': "Ім'я",
+	  	'phoneloc': 'Номер телефону',
+	  	'emailloc': 'Електронна пошта',
+	  	'formloc': 'Форма навчання',
+	  	'onlineloc': 'Онлайн',
+	  	'offlineloc': 'Оффлайн',
+	  	'appr1': 'Вивчення англійської мови для побудови корпоративної команди',
+	  	'appr2': 'Курси англійської мови для IT компаній',
+	  	'appr3': 'Інтенсивний курс “Deep Dive into English”',
+	  	'appr4': 'Англійська онлайн',
+	  	'appr5': 'Книги для самоосвіти',
+	  	'appr6': 'Тестування рівня англійської мови та сертифікація',
+	  	'howloc': 'Як ви дізнались про нас?',
+	  	'forregloc': 'Зареєструватись',
+	  	'weoff1': 'вивчення англійської для корпоративного командоутворення',
+	  	'weoff2': 'річний курс англійської мови',
+	  	'weoff3': 'інтенсивний курс Deep Dive into English',
+	  	'weoff4': 'онлайн-курс',
+	  	'weoff5': 'можливість самоосвіти разом з нами',
+	  	'forprogloc': 'Bеб Дизайнерів',
+	  	'forprogloc1': 'Bеб Дизайнерів',
+	  	'forprogrloc': 'Для програмістів',
+	  	'forprogrloc1': 'Для програмістів',
+	  	'supprtloc': 'Підтримка',
+	  	'ouradvloc': 'Наші переваги',
+	  	'1': "Ми впевнені, що всі ваші працівники добре відібрані та мають достатні знання англійської мови. Таким чином, немає необхідності навчати їх академічним чи загальним мовним навичкам. Однак навчання англійською може бути корисним для покращення соціальних стосунків, заохочення та, як наслідок, утримання працівників.Незважаючи на те, що всі люди мають різні захоплення та інтереси, процес вивчення англійської є чи не єдиним, який захоплює всіх IT-фахівців. Таким чином, уроки англійської не нав'язуються як обов'язкові корпоративні заходи. Крім того, розуміння та навички англійської потребують постійної практики, оскільки вони легко втрачаються. Давайте уточнимо, як ми бачимо діяльність. Спираючись на свій 10-річний досвід, ми можемо сказати, що розмовна діяльність найбільше підходить для цієї мети. У нас є меню різноманітних рольових ігор, ідей англомовного клубу, тем для дебатів, «битв» думок і командної роботи (як бачите, це не академічний підхід до навчання).Ми заохочуємо вас надати своїм співробітникам ще одну додаткову перевагу, щоб надихнути їх працювати ефективніше в команді та бути більш відданими цілям Вашої компанії!",
+	  	'2': 'Кожен IT-працівник повинен володіти англійською мовою. Більшість із них певною мірою володіє англійською мовою. Наші курси англійської можуть допомогти співробітникам вашої компанії підтримувати та вдосконалювати свої знання мови. Крім того, ми пропонуємо кілька професійних тем для збільшення словникового запасу.Є два уроки на тиждень, кожен урок триває 60-90 хвилин, а курс триває 12 місяців, загальна тривалість 96-144 години. Є один основний урок, який містить граматичний і лексичний матеріал, а другий призначений для його практичної реалізації.Словниковий запас вивчається на заняттях і закріплюється під час коротких щоденних домашніх завдань.Ми приділяємо увагу всім видам діяльності з англійської мови, щоб покращити навички аудіювання та говоріння на уроках, але навички письма та читання розвиваються під час домашніх завдань.Процес навчання включає багато практичних вправ, наприклад, створення презентацій.На практичному занятті учасники ведуть діалоги, розігрують ситуації та беруть участь в дискусіях, оскільки головна мета курсу – покращити комунікативні навички шляхом надання впевненості та відпрацювання вільного мовлення.Перша частина курсу включає загальні теми англійської мови. Він розділений на одиниці. Кожен розділ складається з 4 уроків і тесту, щоб оцінити прогрес і мотивувати вчитися більше. Друга частина містить професійні англійські теми для збагачення професійного словникового запасу.',
+	  	'3': "У наш час успішний бізнес неможливий без міжнародної співпраці. Іноземні клієнти, онлайн- та офлайн-навчальні програми по всьому світу, хакатони, ділові зустрічі. Це означає, що знання англійської є обов’язковим для кожного члена команди.Виконавши цю програму, учасники підвищать свою англійську як мінімум до наступного рівня. Ми пропонуємо проводити якісні уроки, які охоплюють усі аспекти мови - говоріння, письмо, аудіювання, граматику та вимову.Теми пов'язані з IT, релокацією, роботою з клієнтами, бізнесом, туризмом і міжнародними питаннями.Курс триває 3-6 місяців. Графік гнучкий, ви можете вибрати для команди відповідний варіант - 4-5 днів на тиждень по 1,5-3 години на день. Система постійної перевірки домашніх завдань і регулярних перевірок успішності забезпечує швидкий розвиток учнів. За результатами курсу ми гарантуємо, що учасники будуть підготовлені до Skype та facetime зустрічей з іноземними клієнтами, ділової електронної пошти, написання документації англійською мовою та ділових поїздок чи переїзду за кордон. Після закінчення курсу студенти можуть виїхати за кордон на 2-тижневий курс навчання з наданням проживання. Ціна буде обговорена. Успіх першого інтенсивного курсу Deep Dive into English досвід підтверджується вражаючими результатами випускників – 90% учасників покращили рівень володіння англійською мовою та застосували його в особистому та професійному житті – просування по службі, туризм, отримання роботи мрії.",
+	  	'4': 'Можливість включає 3 програми для відпрацювання граматичних і словникових навичок для співробітників рівня Beginners, Intermediate і Upper Intermediate.Наші онлайн-курси складаються виключно з ІТ-тем, таких як зустрічі, випуски, ІТ-події, ІТ-команди. У рамках наших онлайн-курсів англійської ми надаємо вашим співробітникам доступ до наших інтерактивних онлайн-уроків під наглядом наших викладачів англійської мови. По закінченні курсу співробітники повинні скласти тест на рівень англійської мови та отримати сертифікат.',
+	  	'5': 'Наші підручники англійської мови зручні як для занять з корпоративним викладачем англійської мови, так і для самонавчання ваших співробітників за спеціалізацією.',
+	  	'6': 'Якщо вам потрібно знати свій рівень або потрібен документ, який підтверджує ваше володіння англійською мовою для оцінки компанії, переїзду, навчання, резюме тощо, ми можемо допомогти вам у цьому.'
+	  }
+	}
+
+	document.getElementById('e-lang-en').addEventListener('click', setLang.bind(null,'en'));
+	document.getElementById('e-lang-ua').addEventListener('click', setLang.bind(null,'ua'));
+	// document.getElementById('e-lang-en-main').addEventListener('click', setLang.bind(null,'en'));
+	// document.getElementById('e-lang-ua-main').addEventListener('click', setLang.bind(null,'ua'));
+
+	function setLang(lang){
+	  var p;
+	  if( !txt.hasOwnProperty(lang)) return;
+	  if( window.hasOwnProperty('localStorage'))
+	     window.localStorage.setItem('lang', lang);
+	  for(p in txt[lang]) {
+	    document.getElementById(p).innerText = txt[lang][p];
+	  }
+	}
+
+	var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem('lang', lang)) || 'ua';
+	setLang(lang);
     </script>
 </body>
 </html>

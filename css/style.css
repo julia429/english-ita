@@ -25,6 +25,10 @@
 	font-family: InterBlack;
   	src: url(../fonts/Inter/Inter-Black.ttf);
 }
+@font-face {
+	font-family: InterBold;
+  	src: url(../fonts/Inter/Inter-Bold.ttf);
+}
 
 @font-face{
 	font-family: MontR;
@@ -106,7 +110,7 @@ a.nav-link {
 
 h1.main-title {
 	font-family: InterSemiBold;
-	font-size: 130px;
+	font-size: 125px;
 	line-height: 157px;
 	text-align: center;
 	text-transform: uppercase;
@@ -125,7 +129,7 @@ h1.main-title {
 	letter-spacing: 0em;
 	text-align: center;
 	text-transform: uppercase;
-	border: 1px solid;
+	border: 3px solid #000000;
 	background: transparent;
 	margin: 0 auto 148px auto;
 	display: flex;
@@ -134,8 +138,40 @@ h1.main-title {
 
 }
 
+.sharing-bl {
+	width: 182px;
+	height: 212px;
+	background: #CCEEE7;
+	box-shadow: inset 0px -2px 7px rgba(172, 228, 217, 0.5);
+	border-radius: 20px 0px 20px 20px;
+}
+
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dropdown-menu.show p {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.dropstart .dropdown-toggle::before {
+	display: none;
+}
+
 .descr {
 	display: flex;
+}
+
+.desrcription {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
 }
 
 
@@ -144,7 +180,7 @@ h1.main-title {
 	font-family: MontL;
 font-size: 18px;
 line-height: 200%;
-width: 705px;
+width: 48%;
 /* or 36px */
 
 
@@ -160,8 +196,9 @@ color: #000000;
 	line-height: 44px;
 	text-transform: uppercase;
 	color: #000000;
-	transform: rotate(-90deg);
-
+	/*transform: rotate(-90deg);*/
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
 }
 
 .we-offer-big-txt li {
@@ -185,12 +222,15 @@ color: #000000;
 	line-height: 44px;
 	display: flex;
 	align-items: center;
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	color: #1AA58C;
 	position: relative;
-	top: 10px;
-	left: -5px;
+	top: 15px;
+	/*left: -5px;*/
+	/*width: 250px;*/
+	flex-wrap: wrap;
+	/*width: 200px;*/
 
 }
 .web-designers1 {
@@ -203,7 +243,10 @@ color: #000000;
 	text-transform: uppercase;
 	color: #1AA58C;
 	position: relative;
-	top: 10px;
+	top: 15px;
+	/*width: 100px;*/
+	flex-wrap: wrap;
+	/*width: 200px;*/
 	/*margin-left: 200px;*/
 	/*right: -10px;*/
 
@@ -217,12 +260,27 @@ color: #000000;
 	text-transform: uppercase;
 	color: #1AA58C;
 	/*position: relative;*/
-	margin-left: 74px;
-	margin-right: 74px;
+	/*margin-left: 74px;*/
+	/*margin-right: 74px;*/
 	margin-top: 68px;
 	/*right: -10px;*/
 }
 
+.web-designers,
+.web-designers1 {
+	width: 15%;
+}
+
+.for-pr,
+.for-pr1 {
+	width: 18%;
+}
+
+/*.first-line p {
+	width: 20%;
+	display: flex;
+	flex-wrap: wrap;
+}*/
 .for-pr,
 .web-designers {
 	font-family: InterBlack;
@@ -235,6 +293,8 @@ color: #000000;
 	color: #1AA58C;
 	position: relative;
 	top: -20px;
+	/*width: 200px;*/
+	flex-wrap: wrap;
 }
 
 .qas2,
@@ -252,6 +312,12 @@ color: #000000;
 /*	margin-left: 270px;
 	margin-right: 220px;*/
 }
+
+.mb-6 {
+	margin-bottom: 130px;
+}
+
+.footer-mobile { display: none; }
 
 .hrs,
 .bas {
@@ -316,7 +382,7 @@ li::marker {
 
 .custom-row {
 	display: flex;
-	width: 100%;
+	/*width: 100%;*/
 	justify-content: space-between;
 	align-items: center;
 }
@@ -326,7 +392,6 @@ li::marker {
 	width: 45%;
 }
 
-#more {display: none;}
 
 .leftt,
 .rightt {
@@ -438,7 +503,9 @@ margin-bottom: 20px;
 	margin-bottom: 21px;
 }
 
-.more {
+
+
+/*.more {
 	font-family: InterMedium;
 font-size: 18px;
 line-height: 22px;
@@ -448,7 +515,7 @@ text-transform: lowercase;
 color: #666666;
 margin-bottom: 36px;
 
-}
+}*/
 
 .register {
 	border: 2px solid #1AA58C;
@@ -468,6 +535,16 @@ margin-bottom: 36px;
 
 	color: #1AA58C;
 	background: none;
+}
+
+.register:hover,
+.register:active,
+.register:focus {
+	background: #1AA58C;
+	color: #fff;
+	border: 3px solid #1AA58C;
+	outline: 0;
+	box-shadow: none;
 }
 
 .cust-w {
@@ -493,6 +570,9 @@ margin-bottom: 36px;
 	width: 100%;
 	padding: 130px 577px 128px 343px;
 	height: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 
 }
 
@@ -521,9 +601,13 @@ margin-bottom: 36px;
 	font-size: 16px;
 }
 
-.user-info-details {
-	margin-left: 30px;
+.more-btn:focus-visible {
+	outline: 0;
 }
+
+/*.user-info-details {
+	margin-left: 30px;
+}*/
 
 .user-txt {
 	font-family: MontL;
@@ -565,17 +649,44 @@ margin-bottom: 36px;
 	font-size: 16px;
 }
 
-.progress-bar {
-	background: #1AA58C;
-}
-
 .progress-numbers {
 	margin-bottom: 0;
 	font-family: MontL;
 	font-size: 10px;
 }
 
+.more-btn {
+	font-family: MontR;
+	background: none;
+	border: 0;
+	text-align: left;
+	text-decoration: underline;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
 
+.hide{
+    display: none;
+}
+
+.content {
+	font-family: MontEL;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 21px;
+    text-align: justify;
+}
+
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+	color: #1AA58C;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+	color: #1AA58C;
+}
 
 
 /* choose block*/
@@ -583,21 +694,20 @@ margin-bottom: 36px;
 
 
 .choose {
-	padding: 200px 550px;
+	padding: 200px 0;
 	box-sizing: border-box;
+	width: 45%; 
+	margin: 0 auto;
 }
 
 .choose-txt {
-	font-family: InterBlack;
-font-style: normal;
-font-weight: 900;
-font-size: 100px;
-line-height: 121px;
-display: flex;
-align-items: center;
-text-transform: uppercase;
-
-color: #1AA58C;
+	font-family: InterRegular;
+	font-size: 100px;
+	line-height: 121px;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	color: #1AA58C;
 }
 
 
@@ -608,12 +718,21 @@ footer {
 }
 
 .footer-menu li {
+	margin-bottom: 10px;
+}
+
+.footer-menu li a{
 	font-family: MontM;
 	font-size: 18px;
 	line-height: 22px;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
+	text-decoration: none;
+}
+
+.footer-menu li a:hover {
+	text-decoration: underline;
 }
 
 
@@ -630,6 +749,266 @@ footer {
 
 }
 
+
+
+
+/* modal window*/
+
+.modal {
+	--bs-modal-width: 56%;
+}
+
+.modal-header {
+	padding-top: 90px;
+	padding-bottom: 30px;
+	justify-content: center;
+	border-bottom: 0px;
+}
+.modal-content {
+	padding-left: 104px;
+	padding-right: 104px;
+	padding-bottom: 130px;
+	padding-top: 20px;
+}
+
+.modal-title {
+	font-family: InterLight;
+	font-size: 36px;
+	line-height: 44px;
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	text-align: center;
+	color: #1AA58C;
+
+}
+
+.form-check {
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+}
+.checkbox-wrapper {
+	margin-left: 39px;
+	margin-bottom: 50px;
+}
+
+.form-check-label {
+	font-family: MontL;
+	font-size: 18px;
+	line-height: 200%;
+	color: #000000;
+	margin-left: 16px;
+
+}
+
+.form-check-input[type=checkbox] {
+	border-radius: 0;
+	border-color: #1AA58C;
+	border-width: 2px;
+}
+
+.form-label,
+.radio-txt {
+	font-family: MontL;
+	font-size: 18px;
+	line-height: 200%;
+	color: #000000;
+
+}
+
+.form-control {
+	border: 2px solid #1AA58C;
+	border-radius: 18px;
+}
+
+.register-btn {
+	background: #1AA58C;
+	border: 2px solid #1AA58C;
+	border-radius: 18px;
+	width: 70%;
+	height: 47px;
+	font-family: InterBold;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+}
+
+.btn-close {
+	position: relative;
+	left: 100%;
+	top: 50px;
+}
+
+.register-btn:hover {
+	background: #fff;
+	border: 3px solid #1AA58C;
+	color: #1AA58C;
+}
+
+.form-check-input:checked {
+	background-color: rgba(13, 110, 253, 0);
+}
+
+.form-check-input:checked[type=checkbox] {
+	background-image: url(../img/v.png);
+}
+
+.form-check-input:focus {
+	box-shadow: none;
+}
+
+.form-check-input:checked[type=radio] {
+	background: linear-gradient(180deg, #FE6A54 0%, #FF1181 100%);
+	border: 2px solid #fff;
+	outline: 2px solid #1AA58C;
+}
+
+.form-check-input[type=radio] {
+	border: 2px solid #1AA58C;
+}
+
+.footer-contacts li a { text-decoration: none; }
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.descr,
+	.we-offer-wrapper,
+	.custom-row,
+	.cust-mobile {
+		flex-direction: column;
+	}
+
+	.for-what, .we-offer-txt {
+		transform: rotate(0deg);
+		writing-mode: horizontal-tb;
+		font-size: 24px; 
+		margin-right: 0; 
+		text-align: center;
+	}
+	.weofferimg,
+	.lines-img,
+	.for-pr, .web-designers, .books-mobile, .foot-mob {
+		display: none;
+	}
+	h1.main-title { font-size: 42px }
+	.start { width: 172px; height: 36px; font-size: 15px; }
+	.main-header { height: auto; }
+	.our-cource, .we-offer-big-txt, .our-teachers-txt { width: 100%; margin: 0 auto; text-align: justify; font-size: 14px;}
+	.we-offer-big-txt { padding-left: 15px;}
+	.under-main-header { padding-top: 154px; margin-bottom: 20px }
+	.web-designers1, .for-pr1 { font-size: 14px; line-height: 16px }
+	.for-pr1 { width: 25%; }
+	.support { font-size: 24px; width: 17%; line-height: normal; top: 0;}
+	.qas, .pms2 { margin-left: 0; margin-right: 0; font-size: 18px; }
+	.qas2, .pms { font-size: 18px; }
+	.hrs, .bas { font-size: 24px; }
+	.we-offer { height: auto; margin-top: 70px; margin-bottom: 70px; }
+	.we-offer-wrapper { margin-top: 40px; }
+	.our-teachers, .our-adv { height: auto; padding-top: 30px; padding-bottom: 30px }
+	.left, .right { width: 100%; }
+	.our-teachers-header { font-size: 24px; margin-top: 24px; text-align: center; }
+	.teachersimg, .expimg { width: 100%; }
+	.our-expirience { padding-top: 70px; padding-bottom: 70px }
+	.our-adv { background-image: url(../img/adv-mobile.png); }
+	.cust-w, .register { width: 100%; }
+	.choose { padding: 20px; }
+	.choose-txt { font-size: 36px; line-height: 43px; font-family: InterBlack; width: 220px; }
+	.device-mob { width: 25%; }
+	#ourAppr { margin-top: 70px; }
+	.approaches-header { font-size: 24px;line-height: 29px; text-align: left; }
+	h3 { font-size: 16px; line-height: 19px }
+	.number { width: 26px; height: 39px; }
+	.under { font-size: 14px; line-height: 17px; }
+	.content { font-size: 12px; line-height: 15px; margin-bottom: 10px; }
+	.more-btn { font-size: 10px; margin-bottom: 10px; }
+	.register { height: 30px; font-size: 12px;	}
+	.approaches-header { margin-bottom: 36px }
+	.mbc { margin-bottom: 60px }
+	.under-main-txt { font-size: 12px; line-height: 15px; margin-bottom: 10px; }
+	.reviews { padding: 0; background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;}
+	.none-mob { display: none !important }
+	.swiper-slide { padding: 0; }
+	.swiper { margin-left: 0px !important }
+	.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after { display: none }
+	.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after { display: none }
+	.qas, .pms2 { margin-top: 0; opacity: 0.6; bottom: -20px; }
+	.qas2, .pms { opacity: 0.8; bottom: -20px; }
+	.hrs, .bas { top: 60px; }
+	.user-name { font-size: 20px; line-height: 24px; }
+	.job-details, .year { font-size: 14px; }
+	.job-details a{ font-size: 14px; }
+	footer { display: none; }
+	.footer-mobile { 
+		display: block; 
+		background: #1AA58C;
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+	}
+
+	.bg {
+		background-image: url(../img/plants-mob.png);
+		width: 100%;
+		background-size: cover;
+		background-position: bottom;
+		height: 550px;
+	}
+
+	.footer-menu-mobile li a{
+		font-family: InterLight;
+		font-size: 16px;
+		line-height: 22px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	.footer-menu-mobile li {
+		margin-bottom: 10px;
+	}
+
+	.footer-menu-mobile,
+	.footer-contacts { padding-left: 0 }
+
+	.footer-menu li a:hover {
+		text-decoration: underline;
+	}
+
+	.phone-numb, 
+	.email {
+		font-size: 16px;
+		font-family: InterLight;
+		display: block;
+		text-align: center;
+	}
+
+	.cont {
+		font-size: 14px;
+		font-family: InterLight;
+		display: block;
+		text-align: center;
+	}
+
+	.modal-content {
+		padding: 5px;
+	}
+	.mb-6 { margin-bottom: 20px; }
+	.modal-title { font-size: 30px }
+	.modal-header { padding-bottom: 24px; padding-top: 40px }
+	.btn-close { left: 90%; top: 25px; }
+	.appr-modal { display: none !important }
+	.form-check-label, .form-label, .radio-txt { font-size: 12px; }
+	.checkbox-wrapper { margin-left: 0; margin-bottom: 16px; }
+	.register-btn { width: 100%; font-size: 12px; font-family: InterLight; height: 30px; display: flex; align-items: center; justify-content: center; }
+
+
+}
 
 
 
