@@ -201,6 +201,19 @@ color: #000000;
 	transform: rotate(180deg);
 }
 
+.for-whatt {
+	font-family: InterLight;
+	font-size: 36px;
+	line-height: 44px;
+	text-transform: uppercase;
+	color: #000000;
+	/*transform: rotate(-90deg);*/
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	display: flex;
+	justify-content: space-between;
+}
+
 .we-offer-big-txt li {
 	margin-bottom: 10px;
 }
@@ -501,6 +514,10 @@ margin-bottom: 20px;
 	line-height: 130%;
 	color: #000000;
 	margin-bottom: 21px;
+}
+
+.swiper-pagination {
+	top: 316px;
 }
 
 
