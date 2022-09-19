@@ -69,26 +69,26 @@
 						  </button>
 						  	<div class="dropdown-menu sharing-bl">
 						  		<p>
-						  			<a href="">
+						  			<a href="" onClick="openWin2()">
 						  				<img src="img/sharing/3.png">
 						  			</a>
-						  			<a href="">
+						  			<a href="viber://add?number=+380674317424">
 						  				<img src="img/sharing/1.png">
 						  			</a>
 						  		</p>
 						  		<p>
-						  			<a href="">
+						  			<a href="" onClick="openWinIn()">
 						  				<img src="img/sharing/5.png">
 						  			</a>
-						  			<a href="">
+						  			<a href="https://wa.me/+380674317424">
 						  				<img src="img/sharing/2.png">
 						  			</a>
 						  		</p>
 						  		<p>
-						  			<a href="">
+						  			<a href="" onClick="openWinTw()">
 						  				<img src="img/sharing/6.png">
 						  			</a>
-						  			<a href="">
+						  			<a href="viber://add?number=+380674317424">
 						  				<img src="img/sharing/4.png">
 						  			</a>
 						  		</p>
@@ -869,5 +869,22 @@ A success of the first intense course Deep Dive into English experience is prove
 	var lang = (window.hasOwnProperty('localStorage') && window.localStorage.getItem('lang', lang)) || 'ua';
 	setLang(lang);
     </script>
+    <script>
+function openWinTw() {
+  myWinTw = open("https://twitter.com/share?url=https://ita.in.ua/",
+  "displayWindow","width=520,height=480,left=450,top=170,status=no,toolbar=no,menubar=no");
+}
+
+function openWin2() {
+myWin=open("http://www.facebook.com/sharer.php?u=https://ita.in.ua/","displayWindow","width=120,height=80,left=650,top=170,status=no,toolbar=no,menubar=no");
+}
+
+
+function openWinIn() {
+  myWinIn = open("https://www.linkedin.com/shareArticle?mini=true&url=https://ita.in.ua/&title=Hackers' School&source=LinkedIn",
+  "displayWindow","width=120,height=80,left=650,top=170,status=no,toolbar=no,menubar=no");
+}
+
+</script>
 </body>
 </html>
