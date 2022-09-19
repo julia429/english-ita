@@ -1,4 +1,4 @@
-let noOfCharac = 100;
+let noOfCharac = 1000;
 // let contents = document.querySelectorAll("#content2");
 let contents = document.getElementsByClassName("content");
 let arr = [1, 2, 3, 4, 5];
